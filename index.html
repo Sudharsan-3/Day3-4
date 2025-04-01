@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data:;">
+    <title>Quiz App - Welcome</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="icon" type="image/png" href="./src/assets/quiz-app-logo.png">
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-cyan-100 min-h-screen">
+
+    
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md py-4 px-6 flex justify-between items-center z-50">
+        <div class="flex gap-3 items-center">
+            <img class="w-12 h-12" src="./src/assets/quiz-app-logo.png" alt="quiz-app-logo">
+            <h4 class="text-xl font-bold text-gray-700">Quiz App</h4>
+        </div>
+    </header>
+
+   
+    <main class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                 w-full max-w-lg h-[400px] bg-white rounded-lg shadow-lg p-6 text-center">
+        <h1 class="text-2xl font-bold text-gray-800">Select Quiz Difficulty</h1>
+        <form class="mt-5 space-y-4">
+            <label class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-green-200 transition">
+                <input class="level" type="radio" name="choice" value="easy">
+                <span class="text-lg font-medium text-gray-700">Easy</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-green-200 transition">
+                <input class="level" type="radio" name="choice" value="medium">
+                <span class="text-lg font-medium text-gray-700">Medium</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3 bg-gray-100 rounded-lg cursor-pointer hover:bg-green-200 transition">
+                <input class="level" type="radio" name="choice" value="hard">
+                <span class="text-lg font-medium text-gray-700">Hard</span>
+            </label>
+        </form>
+
+        <button id="startButton" 
+            class="w-full mt-6 bg-blue-500 text-white font-medium py-2 rounded-lg hover:bg-blue-600 transition active:scale-95">
+            Start Quiz
+        </button>
+    </main>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
